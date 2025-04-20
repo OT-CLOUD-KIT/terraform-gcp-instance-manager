@@ -9,8 +9,7 @@ This Terraform configuration manages GCP instance groups with modular support fo
 
 ## Architecture
 
-<img width="6000" length="8000" alt="Terraform" src="https://github.com/user-attachments/assets/26c523f3-290d-4be9-bc8b-39fbca89478b">
-
+<img width="6000" length="8000" alt="Terraform" src="https://github.com/user-attachments/assets/84ad9af5-c004-4ef0-aba1-6dfc8d95c8d6">
 
 
 ## Providers
@@ -69,7 +68,7 @@ module "umig" {
 |**metadata**| Metadata for instances | map(string) | { } | yes| 
 |**tags** | Network tags | list(string) | [ ] | yes|
 |**service_account_email**| Service Account Email | string | { } | yes | 
-|**service_account_scopes**| Service Account Scopes | ltst(string) | "https://www.googleapis.com/auth/cloud-platform" | yes|
+|**service_account_scopes**| Service Account Scopes | list(string) | "https://www.googleapis.com/auth/cloud-platform" | yes|
 |**enable_secure_boot**| Enable secure boot for shielded VM | bool | false | yes | 
 |**enable_vtpm**| Enable vTPM for shielded VM | bool | true | yes|
 |**enable_integrity_monitoring**| Enable Integrity Monitoring | bool | true | yes| 
