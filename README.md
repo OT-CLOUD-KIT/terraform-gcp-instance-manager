@@ -54,7 +54,7 @@ module "umig" {
 
 | Name | Description | Type | Default | Required | 
 |------|-------------|:----:|---------|:--------:|
-|**project_id**| The ID of the project for which the IAM resource is to be configured | string | { } | yes| 
+|**project_id**| The ID of the project for which the Instance Group is to be configured | string | { } | yes| 
 |**region**| The Google Cloud region | string | us-central1 | yes | 
 |**zone**| The zone for the zonal managed instance group | string | { } |yes| 
 |**name**| Base name used for naming resources like templates or instance groups | string | { } | yes| 
